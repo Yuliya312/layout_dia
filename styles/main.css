@@ -585,10 +585,12 @@ img {
     display: inline-block;
     margin: 0 auto;
     text-align: center;
-    color: #334563; }
+    color: #334563;
+    outline: none; }
     .process-card__btn::before {
       content: "";
       position: absolute;
+      display: block;
       left: 0;
       height: 32px;
       width: 32px;
@@ -946,9 +948,15 @@ img {
     height: 24px;
     -webkit-transition: 0.2s ease-out fill;
     transition: 0.2s ease-out fill; }
-    .contact__socials-icon:hover {
+    .contact__socials-icon:hover, .contact__socials-icon:focus, .contact__socials-icon:active {
       cursor: pointer;
       fill: #2060f6; }
+  .contact__socials-img:focus {
+    outline: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  .contact__socials-img:focus .contact__socials-icon {
+    fill: #2060f6; }
 
 .form {
   display: -webkit-box;
