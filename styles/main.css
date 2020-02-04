@@ -582,9 +582,17 @@ img {
   .process-card__btn {
     position: relative;
     width: 100%;
-    display: inline-block;
+    height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 auto;
-    text-align: center;
     color: #334563;
     outline: none; }
     .process-card__btn::before {
@@ -936,16 +944,19 @@ img {
     margin-bottom: 10px;
     color: rgba(255, 255, 255, 0.5); }
   .contact__socials {
-    height: 24px;
+    height: 25px;
     width: 110px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .contact__socials-icon {
-    height: 24px;
+    height: 25px;
     -webkit-transition: 0.2s ease-out fill;
     transition: 0.2s ease-out fill; }
     .contact__socials-icon:hover, .contact__socials-icon:focus, .contact__socials-icon:active {
