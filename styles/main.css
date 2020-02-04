@@ -997,33 +997,18 @@ img {
     .form__input:hover {
       color: white;
       cursor: pointer; }
-      .form__input:hover::-webkit-input-placeholder {
-        color: white; }
-      .form__input:hover::-moz-placeholder {
-        color: white; }
-      .form__input:hover:-ms-input-placeholder {
-        color: white; }
-      .form__input:hover::-ms-input-placeholder {
-        color: white; }
-      .form__input:hover::placeholder {
-        color: white; }
     .form__input:focus {
       border-bottom: 2px solid #144ed4;
       outline: none; }
       .form__input:focus::-webkit-input-placeholder {
-        color: white;
         text-align: start; }
       .form__input:focus::-moz-placeholder {
-        color: white;
         text-align: start; }
       .form__input:focus:-ms-input-placeholder {
-        color: white;
         text-align: start; }
       .form__input:focus::-ms-input-placeholder {
-        color: white;
         text-align: start; }
       .form__input:focus::placeholder {
-        color: white;
         text-align: start; }
   .form__textarea {
     margin-bottom: 80px;
@@ -1272,7 +1257,8 @@ img {
     position: absolute; }
   .slider__img {
     display: block;
-    height: 864px;
+    max-height: 864px;
+    height: 80vh;
     width: 50vw;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1334,5 +1320,8 @@ img {
   background-color: #f2f6fa;
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px); }
+
+section {
+  scroll-behavior: smooth; }
 
 /*# sourceMappingURL=main.css.map */
