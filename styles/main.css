@@ -1321,7 +1321,7 @@ img {
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px); }
 
-section {
+html {
   scroll-behavior: smooth; }
 
 /*# sourceMappingURL=main.css.map */
