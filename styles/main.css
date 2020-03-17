@@ -594,7 +594,8 @@ img {
             align-items: center;
     margin: 0 auto;
     color: #334563;
-    outline: none; }
+    outline: none;
+    cursor: pointer; }
     .process-card__btn::before {
       content: "";
       position: absolute;
@@ -712,7 +713,8 @@ img {
         padding: 0 20px;
         font-size: 19px; } }
   .vision__btn {
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 200px; }
   .vision__shape--small:nth-of-type(2) {
     top: 10%;
     left: 25%;
@@ -920,6 +922,8 @@ img {
   .btn:focus {
     -webkit-transform: scale(1.05);
             transform: scale(1.05); }
+  .btn-link {
+    width: 70%; }
 
 .contact {
   width: 100%; }
@@ -1021,6 +1025,11 @@ img {
         text-align: start; }
       .form__input:focus::placeholder {
         text-align: start; }
+    .form__input:-webkit-autofill {
+      -webkit-box-shadow: inset 0 0 0 50px #2c2c2c;
+      -webkit-text-fill-color: #fff; }
+  .form:focus:invalid {
+    outline: none; }
   .form__textarea {
     margin-bottom: 80px;
     text-align: start;
@@ -1194,7 +1203,12 @@ img {
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s; }
     .person__photo::before {
       content: "";
       position: absolute;
@@ -1217,6 +1231,9 @@ img {
       border-radius: 12px;
       -webkit-transform: rotate(30deg);
               transform: rotate(30deg); }
+    .person__photo:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
   .person__img {
     position: relative;
     display: block;
